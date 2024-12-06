@@ -26,7 +26,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://43.204.236.193:5000/api/contact", formData);
+      const response = await axios.post("http://13.233.77.126:5000/api/contact", formData);
       setResponseMessage(response.data.message); // Show success message
       setFormData({ name: "", email: "", phone: "", subject: "", message: "" }); // Reset form
     } catch (error) {

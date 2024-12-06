@@ -2,7 +2,7 @@
   "name": "psk",
   "version": "0.1.0",
   "private": true,
-  "home":"http://43.204.236.193",
+  "home":"http://13.233.77.126",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.17.0",

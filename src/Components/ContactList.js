@@ -11,7 +11,7 @@ const ContactList = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await axios.get('http://43.204.236.193:5000/api/contact');
+        const response = await axios.get('http://13.233.77.126:5000/api/contact');
         setContacts(response.data); // Save the fetched data in the state
         setLoading(false);
       } catch (err) {
