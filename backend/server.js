@@ -14,6 +14,15 @@ app.use(bodyParser.json());
 // Routes
 app.use("/api/contact", contactRoute);
 
+
+app.use(express.static(path.join(__dirname, "../build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../build", "index.html"));
+});
+
+
+
+
 // Connect to MongoDB
 mongoose.connect("mongodb+srv://jciindiaashwini:Y2PnAUM3luesjVcy@aws.urc0i.mongodb.net/psk", {
   useNewUrlParser: true,
